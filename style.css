@@ -1,0 +1,51 @@
+
+body {
+    margin: 0;
+    font-family: 'Courier New', monospace;
+    background: #555;
+    color: #fff;
+    text-align: center;
+    padding: 2em;
+}
+
+h1 {
+    font-size: 2.5em;
+    color: cyan;
+    text-shadow: 0 0 10px #0ff;
+}
+
+p {
+    font-size: 1.2em;
+    margin-bottom: 1em;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 1em;
+    background: hotpink;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    color: white;
+    box-shadow: 0 0 10px hotpink;
+}
+
+.cat-animations {
+    margin-top: 2em;
+}
+
+.cat {
+    height: 100px;
+    margin: 0 10px;
+    animation: float 2s ease-in-out infinite alternate;
+}
+
+.jett {
+    margin-top: 2em;
+    height: 300px;
+}
+
+@keyframes float {
+    from { transform: translateY(0); }
+    to { transform: translateY(-20px); }
+}
