@@ -1,29 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Happy Birthday!</title>
-    <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <title>Happy Birthday!</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="confetti.js" defer></script>
 </head>
 <body>
-    <audio id="bg-music" autoplay loop>
-        <source src="blue_hair.mp3" type="audio/mpeg" />
-        Your browser does not support the audio element.
-    </audio>
+  <!-- Background Music -->
+  <audio autoplay loop>
+    <source src="audio.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
 
-    <div class="container">
-        <h1>🎉 Happy Birthday, Soul Sister! 🎂</h1>
-        <p>You’re the Jett to my clutch, the cat in my chaos, and the melody in my mind. 💙<br>
-        Stay weird, wild & wonderful 🌀</p>
-        <button onclick="toggleMusic()">🔊 Toggle Music</button>
-        <div class="cat-animations">
-            <img src="cat1.gif" class="cat" alt="Cat 1" />
-            <img src="cat2.gif" class="cat" alt="Cat 2" />
-        </div>
-        <img src="jett.png" class="jett" alt="Jett" />
+  <!-- Confetti Canvas -->
+  <canvas id="confetti-canvas"></canvas>
+
+  <!-- Main Content -->
+  <div class="content">
+    <h1>Happy Birthday!</h1>
+    <p>This one's for you — with cats, Jett, and Blue Hair on loop 💙</p>
+
+    <div class="images">
+      <img src="jett.jpg" alt="Jett" class="jett">
+      <img src="cat1.gif" alt="Cat 1" class="cat">
+      <img src="cat2.gif" alt="Cat 2" class="cat">
     </div>
-
-    <script src="script.js"></script>
+  </div>
 </body>
 </html>
